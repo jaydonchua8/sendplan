@@ -1,0 +1,1743 @@
+{
+ "days": 28,
+ "grid": [
+  {
+   "expected_score": 546.5,
+   "expected_score_range": [
+    543.56,
+    548.11
+   ],
+   "policy": "margin=0.00 paid_followups=first reserve=0.0",
+   "refused": 1102.3,
+   "refused_quota": 279.0,
+   "reply_score": 545.1
+  },
+  {
+   "expected_score": 546.8,
+   "expected_score_range": [
+    542.48,
+    549.19
+   ],
+   "policy": "margin=0.00 paid_followups=first reserve=1.0",
+   "refused": 1023.7,
+   "refused_quota": 194.7,
+   "reply_score": 543.5
+  },
+  {
+   "expected_score": 539.5,
+   "expected_score_range": [
+    535.96,
+    545.29
+   ],
+   "policy": "margin=0.00 paid_followups=last reserve=0.0",
+   "refused": 1191.7,
+   "refused_quota": 174.3,
+   "reply_score": 537.6
+  },
+  {
+   "expected_score": 536.7,
+   "expected_score_range": [
+    531.56,
+    542.2
+   ],
+   "policy": "margin=0.00 paid_followups=last reserve=1.0",
+   "refused": 1140.7,
+   "refused_quota": 117.0,
+   "reply_score": 537.0
+  },
+  {
+   "expected_score": 534.3,
+   "expected_score_range": [
+    530.83,
+    538.4
+   ],
+   "policy": "margin=0.00 paid_followups=never reserve=0.0",
+   "refused": 1191.0,
+   "refused_quota": 174.3,
+   "reply_score": 534.0
+  },
+  {
+   "expected_score": 546.4,
+   "expected_score_range": [
+    544.29,
+    547.5
+   ],
+   "policy": "margin=0.10 paid_followups=first reserve=0.0",
+   "refused": 942.7,
+   "refused_quota": 110.3,
+   "reply_score": 545.6
+  },
+  {
+   "expected_score": 546.3,
+   "expected_score_range": [
+    542.22,
+    549.18
+   ],
+   "policy": "margin=0.10 paid_followups=first reserve=1.0",
+   "refused": 884.3,
+   "refused_quota": 50.7,
+   "reply_score": 546.6
+  },
+  {
+   "expected_score": 538.2,
+   "expected_score_range": [
+    534.98,
+    543.44
+   ],
+   "policy": "margin=0.10 paid_followups=last reserve=0.0",
+   "refused": 1095.3,
+   "refused_quota": 76.7,
+   "reply_score": 544.2
+  },
+  {
+   "expected_score": 537.8,
+   "expected_score_range": [
+    535.19,
+    541.89
+   ],
+   "policy": "margin=0.10 paid_followups=last reserve=1.0",
+   "refused": 1051.0,
+   "refused_quota": 27.7,
+   "reply_score": 543.7
+  },
+  {
+   "expected_score": 533.7,
+   "expected_score_range": [
+    529.82,
+    537.13
+   ],
+   "policy": "margin=0.10 paid_followups=never reserve=0.0",
+   "refused": 1098.3,
+   "refused_quota": 78.0,
+   "reply_score": 538.5
+  }
+ ],
+ "heldout": {
+  "blind: flat cap, reads ledger": {
+   "attempts": 43893.0,
+   "delivered": 26651.3,
+   "expected_score": 493.0,
+   "expected_score_range": [
+    490.4,
+    496.75
+   ],
+   "followups_on_time_pct": 89.5,
+   "followups_planned": 17886.3,
+   "refused": 17241.7,
+   "refused_quota": 16002.3,
+   "repeated_step": 0.0,
+   "replies": 854.3,
+   "replies_by_group": [
+    75.3,
+    432.7,
+    230.3,
+    116.0
+   ],
+   "replies_lv2_up": 779.0,
+   "reply_score": 502.1,
+   "sent_after_reply": 0.0,
+   "units": 15332.3,
+   "unused_by_group": [
+    0.0,
+    3268.0,
+    0.0,
+    0.0
+   ],
+   "unused_units": 3268.0
+  },
+  "quota-aware, default policy": {
+   "attempts": 43533.3,
+   "delivered": 40597.0,
+   "expected_score": 636.1,
+   "expected_score_range": [
+    631.37,
+    643.23
+   ],
+   "followups_on_time_pct": 65.5,
+   "followups_planned": 26169.7,
+   "refused": 2936.3,
+   "refused_quota": 1391.7,
+   "repeated_step": 0.0,
+   "replies": 1337.3,
+   "replies_by_group": [
+    392.7,
+    584.7,
+    235.0,
+    125.0
+   ],
+   "replies_lv2_up": 944.7,
+   "reply_score": 653.7,
+   "sent_after_reply": 0.0,
+   "units": 18774.7,
+   "unused_by_group": [
+    0.0,
+    41.7,
+    0.0,
+    0.0
+   ],
+   "unused_units": 41.7
+  },
+  "quota-aware, tuned on TRAIN": {
+   "attempts": 43694.0,
+   "delivered": 40904.3,
+   "expected_score": 637.8,
+   "expected_score_range": [
+    631.15,
+    642.04
+   ],
+   "followups_on_time_pct": 64.0,
+   "followups_planned": 26332.3,
+   "refused": 2789.7,
+   "refused_quota": 1233.7,
+   "repeated_step": 0.0,
+   "replies": 1340.0,
+   "replies_by_group": [
+    421.0,
+    556.7,
+    228.7,
+    133.7
+   ],
+   "replies_lv2_up": 919.0,
+   "reply_score": 653.5,
+   "sent_after_reply": 0.0,
+   "units": 18784.7,
+   "unused_by_group": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "unused_units": 0.0
+  },
+  "v1: flat cap, assumes delivered": {
+   "attempts": 44000.0,
+   "delivered": 26839.7,
+   "expected_score": 433.3,
+   "expected_score_range": [
+    432.08,
+    435.4
+   ],
+   "followups_on_time_pct": 58.1,
+   "followups_planned": 28246.0,
+   "refused": 17160.3,
+   "refused_quota": 14046.3,
+   "repeated_step": 0.0,
+   "replies": 814.3,
+   "replies_by_group": [
+    124.7,
+    371.0,
+    242.7,
+    76.0
+   ],
+   "replies_lv2_up": 689.7,
+   "reply_score": 447.8,
+   "sent_after_reply": 0.0,
+   "units": 13563.7,
+   "unused_by_group": [
+    0.0,
+    3842.3,
+    0.0,
+    1148.7
+   ],
+   "unused_units": 4991.0
+  }
+ },
+ "heldout_seeds": [
+  901,
+  902,
+  903
+ ],
+ "note": "synthetic data; tables are means over 3 seeds",
+ "runs": {
+  "heldout seed=901 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 44000,
+   "delivered": 41253,
+   "expected_score": 643.23,
+   "followups_on_time_pct": 65.4,
+   "followups_planned": 26568,
+   "refused": 2747,
+   "refused_quota": 1209,
+   "repeated_step": 0,
+   "replies": 1398,
+   "replies_by_group": [
+    440,
+    601,
+    243,
+    114
+   ],
+   "replies_lv2_up": 958,
+   "reply_score": 673.92,
+   "sent_after_reply": 0,
+   "units": 18849,
+   "unused_by_group": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "unused_units": 0
+  },
+  "heldout seed=901 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 44000,
+   "delivered": 41352,
+   "expected_score": 642.04,
+   "followups_on_time_pct": 64.4,
+   "followups_planned": 26612,
+   "refused": 2648,
+   "refused_quota": 1100,
+   "repeated_step": 0,
+   "replies": 1377,
+   "replies_by_group": [
+    432,
+    584,
+    239,
+    122
+   ],
+   "replies_lv2_up": 945,
+   "reply_score": 665.8,
+   "sent_after_reply": 0,
+   "units": 18711,
+   "unused_by_group": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "unused_units": 0
+  },
+  "heldout seed=901 blind quota_aware=False": {
+   "attempts": 44000,
+   "delivered": 26888,
+   "expected_score": 496.75,
+   "followups_on_time_pct": 89.3,
+   "followups_planned": 18153,
+   "refused": 17112,
+   "refused_quota": 15900,
+   "repeated_step": 0,
+   "replies": 871,
+   "replies_by_group": [
+    78,
+    444,
+    232,
+    117
+   ],
+   "replies_lv2_up": 793,
+   "reply_score": 512.0,
+   "sent_after_reply": 0,
+   "units": 15469,
+   "unused_by_group": [
+    0,
+    3158,
+    0,
+    0
+   ],
+   "unused_units": 3158
+  },
+  "heldout seed=901 v1 -": {
+   "attempts": 44000,
+   "delivered": 26946,
+   "expected_score": 435.4,
+   "followups_on_time_pct": 58.1,
+   "followups_planned": 28245,
+   "refused": 17054,
+   "refused_quota": 14030,
+   "repeated_step": 0,
+   "replies": 807,
+   "replies_by_group": [
+    122,
+    344,
+    270,
+    71
+   ],
+   "replies_lv2_up": 685,
+   "reply_score": 448.01,
+   "sent_after_reply": 0,
+   "units": 13649,
+   "unused_by_group": [
+    0,
+    3828,
+    0,
+    1144
+   ],
+   "unused_units": 4972
+  },
+  "heldout seed=902 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 42921,
+   "delivered": 39900,
+   "expected_score": 631.37,
+   "followups_on_time_pct": 66.0,
+   "followups_planned": 25640,
+   "refused": 3021,
+   "refused_quota": 1515,
+   "repeated_step": 0,
+   "replies": 1286,
+   "replies_by_group": [
+    354,
+    579,
+    228,
+    125
+   ],
+   "replies_lv2_up": 932,
+   "reply_score": 632.09,
+   "sent_after_reply": 0,
+   "units": 18712,
+   "unused_by_group": [
+    0,
+    125,
+    0,
+    0
+   ],
+   "unused_units": 125
+  },
+  "heldout seed=902 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 44000,
+   "delivered": 41124,
+   "expected_score": 640.1,
+   "followups_on_time_pct": 65.1,
+   "followups_planned": 26587,
+   "refused": 2876,
+   "refused_quota": 1357,
+   "repeated_step": 0,
+   "replies": 1295,
+   "replies_by_group": [
+    412,
+    525,
+    237,
+    121
+   ],
+   "replies_lv2_up": 883,
+   "reply_score": 629.82,
+   "sent_after_reply": 0,
+   "units": 18842,
+   "unused_by_group": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "unused_units": 0
+  },
+  "heldout seed=902 blind quota_aware=False": {
+   "attempts": 44000,
+   "delivered": 26724,
+   "expected_score": 491.83,
+   "followups_on_time_pct": 88.9,
+   "followups_planned": 17984,
+   "refused": 17276,
+   "refused_quota": 16051,
+   "repeated_step": 0,
+   "replies": 831,
+   "replies_by_group": [
+    81,
+    421,
+    219,
+    110
+   ],
+   "replies_lv2_up": 750,
+   "reply_score": 485.09,
+   "sent_after_reply": 0,
+   "units": 15296,
+   "unused_by_group": [
+    0,
+    3248,
+    0,
+    0
+   ],
+   "unused_units": 3248
+  },
+  "heldout seed=902 v1 -": {
+   "attempts": 44000,
+   "delivered": 26855,
+   "expected_score": 432.53,
+   "followups_on_time_pct": 58.0,
+   "followups_planned": 28260,
+   "refused": 17145,
+   "refused_quota": 14018,
+   "repeated_step": 0,
+   "replies": 802,
+   "replies_by_group": [
+    125,
+    380,
+    238,
+    59
+   ],
+   "replies_lv2_up": 677,
+   "reply_score": 434.88,
+   "sent_after_reply": 0,
+   "units": 13514,
+   "unused_by_group": [
+    0,
+    3776,
+    0,
+    1087
+   ],
+   "unused_units": 4863
+  },
+  "heldout seed=903 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 43679,
+   "delivered": 40638,
+   "expected_score": 633.75,
+   "followups_on_time_pct": 65.1,
+   "followups_planned": 26301,
+   "refused": 3041,
+   "refused_quota": 1451,
+   "repeated_step": 0,
+   "replies": 1328,
+   "replies_by_group": [
+    384,
+    574,
+    234,
+    136
+   ],
+   "replies_lv2_up": 944,
+   "reply_score": 655.16,
+   "sent_after_reply": 0,
+   "units": 18763,
+   "unused_by_group": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "unused_units": 0
+  },
+  "heldout seed=903 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 43082,
+   "delivered": 40237,
+   "expected_score": 631.15,
+   "followups_on_time_pct": 62.5,
+   "followups_planned": 25798,
+   "refused": 2845,
+   "refused_quota": 1244,
+   "repeated_step": 0,
+   "replies": 1348,
+   "replies_by_group": [
+    419,
+    561,
+    210,
+    158
+   ],
+   "replies_lv2_up": 929,
+   "reply_score": 664.81,
+   "sent_after_reply": 0,
+   "units": 18801,
+   "unused_by_group": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "unused_units": 0
+  },
+  "heldout seed=903 blind quota_aware=False": {
+   "attempts": 43679,
+   "delivered": 26342,
+   "expected_score": 490.4,
+   "followups_on_time_pct": 90.2,
+   "followups_planned": 17522,
+   "refused": 17337,
+   "refused_quota": 16056,
+   "repeated_step": 0,
+   "replies": 861,
+   "replies_by_group": [
+    67,
+    433,
+    240,
+    121
+   ],
+   "replies_lv2_up": 794,
+   "reply_score": 509.14,
+   "sent_after_reply": 0,
+   "units": 15232,
+   "unused_by_group": [
+    0,
+    3398,
+    0,
+    0
+   ],
+   "unused_units": 3398
+  },
+  "heldout seed=903 v1 -": {
+   "attempts": 44000,
+   "delivered": 26718,
+   "expected_score": 432.08,
+   "followups_on_time_pct": 58.2,
+   "followups_planned": 28233,
+   "refused": 17282,
+   "refused_quota": 14091,
+   "repeated_step": 0,
+   "replies": 834,
+   "replies_by_group": [
+    127,
+    389,
+    220,
+    98
+   ],
+   "replies_lv2_up": 707,
+   "reply_score": 460.61,
+   "sent_after_reply": 0,
+   "units": 13528,
+   "unused_by_group": [
+    0,
+    3923,
+    0,
+    1215
+   ],
+   "unused_units": 5138
+  },
+  "train seed=101 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 43768,
+   "delivered": 42584,
+   "expected_score": 547.82,
+   "followups_on_time_pct": 62.0,
+   "followups_planned": 27415,
+   "refused": 1184,
+   "refused_quota": 337,
+   "repeated_step": 0,
+   "replies": 1525,
+   "replies_by_group": [
+    849,
+    487,
+    127,
+    62
+   ],
+   "replies_lv2_up": 676,
+   "reply_score": 559.08,
+   "sent_after_reply": 0,
+   "units": 13905,
+   "unused_by_group": [
+    0,
+    822,
+    0,
+    0
+   ],
+   "unused_units": 822
+  },
+  "train seed=101 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 44000,
+   "delivered": 42903,
+   "expected_score": 549.19,
+   "followups_on_time_pct": 59.9,
+   "followups_planned": 27838,
+   "refused": 1097,
+   "refused_quota": 247,
+   "repeated_step": 0,
+   "replies": 1520,
+   "replies_by_group": [
+    866,
+    462,
+    134,
+    58
+   ],
+   "replies_lv2_up": 654,
+   "reply_score": 557.97,
+   "sent_after_reply": 0,
+   "units": 13947,
+   "unused_by_group": [
+    0,
+    766,
+    0,
+    0
+   ],
+   "unused_units": 766
+  },
+  "train seed=101 aware margin=0.00 paid_followups=last reserve=0.0": {
+   "attempts": 44000,
+   "delivered": 42751,
+   "expected_score": 545.29,
+   "followups_on_time_pct": 67.3,
+   "followups_planned": 23789,
+   "refused": 1249,
+   "refused_quota": 216,
+   "repeated_step": 0,
+   "replies": 1685,
+   "replies_by_group": [
+    1080,
+    372,
+    159,
+    74
+   ],
+   "replies_lv2_up": 605,
+   "reply_score": 556.6,
+   "sent_after_reply": 0,
+   "units": 9468,
+   "unused_by_group": [
+    0,
+    4478,
+    464,
+    304
+   ],
+   "unused_units": 5246
+  },
+  "train seed=101 aware margin=0.00 paid_followups=last reserve=1.0": {
+   "attempts": 44000,
+   "delivered": 42807,
+   "expected_score": 542.2,
+   "followups_on_time_pct": 67.7,
+   "followups_planned": 23865,
+   "refused": 1193,
+   "refused_quota": 148,
+   "repeated_step": 0,
+   "replies": 1684,
+   "replies_by_group": [
+    1092,
+    353,
+    173,
+    66
+   ],
+   "replies_lv2_up": 592,
+   "reply_score": 550.22,
+   "sent_after_reply": 0,
+   "units": 9171,
+   "unused_by_group": [
+    0,
+    4928,
+    462,
+    151
+   ],
+   "unused_units": 5541
+  },
+  "train seed=101 aware margin=0.00 paid_followups=never reserve=0.0": {
+   "attempts": 43582,
+   "delivered": 42329,
+   "expected_score": 538.4,
+   "followups_on_time_pct": 69.1,
+   "followups_planned": 23371,
+   "refused": 1253,
+   "refused_quota": 216,
+   "repeated_step": 0,
+   "replies": 1697,
+   "replies_by_group": [
+    1091,
+    362,
+    171,
+    73
+   ],
+   "replies_lv2_up": 606,
+   "reply_score": 555.21,
+   "sent_after_reply": 0,
+   "units": 8949,
+   "unused_by_group": [
+    0,
+    4935,
+    498,
+    299
+   ],
+   "unused_units": 5732
+  },
+  "train seed=101 aware margin=0.10 paid_followups=first reserve=0.0": {
+   "attempts": 43818,
+   "delivered": 42831,
+   "expected_score": 547.42,
+   "followups_on_time_pct": 59.3,
+   "followups_planned": 27637,
+   "refused": 987,
+   "refused_quota": 124,
+   "repeated_step": 0,
+   "replies": 1535,
+   "replies_by_group": [
+    884,
+    462,
+    124,
+    65
+   ],
+   "replies_lv2_up": 651,
+   "reply_score": 563.49,
+   "sent_after_reply": 0,
+   "units": 13892,
+   "unused_by_group": [
+    0,
+    766,
+    0,
+    0
+   ],
+   "unused_units": 766
+  },
+  "train seed=101 aware margin=0.10 paid_followups=first reserve=1.0": {
+   "attempts": 43797,
+   "delivered": 42890,
+   "expected_score": 547.59,
+   "followups_on_time_pct": 61.3,
+   "followups_planned": 27537,
+   "refused": 907,
+   "refused_quota": 43,
+   "repeated_step": 0,
+   "replies": 1536,
+   "replies_by_group": [
+    892,
+    463,
+    117,
+    64
+   ],
+   "replies_lv2_up": 644,
+   "reply_score": 557.11,
+   "sent_after_reply": 0,
+   "units": 13856,
+   "unused_by_group": [
+    0,
+    782,
+    0,
+    0
+   ],
+   "unused_units": 782
+  },
+  "train seed=101 aware margin=0.10 paid_followups=last reserve=0.0": {
+   "attempts": 43818,
+   "delivered": 42688,
+   "expected_score": 543.44,
+   "followups_on_time_pct": 66.2,
+   "followups_planned": 23826,
+   "refused": 1130,
+   "refused_quota": 93,
+   "repeated_step": 0,
+   "replies": 1680,
+   "replies_by_group": [
+    1071,
+    371,
+    151,
+    87
+   ],
+   "replies_lv2_up": 609,
+   "reply_score": 557.8,
+   "sent_after_reply": 0,
+   "units": 9444,
+   "unused_by_group": [
+    0,
+    4672,
+    406,
+    76
+   ],
+   "unused_units": 5154
+  },
+  "train seed=101 aware margin=0.10 paid_followups=last reserve=1.0": {
+   "attempts": 44000,
+   "delivered": 42923,
+   "expected_score": 541.89,
+   "followups_on_time_pct": 70.9,
+   "followups_planned": 23974,
+   "refused": 1077,
+   "refused_quota": 32,
+   "repeated_step": 0,
+   "replies": 1706,
+   "replies_by_group": [
+    1094,
+    367,
+    165,
+    80
+   ],
+   "replies_lv2_up": 612,
+   "reply_score": 563.04,
+   "sent_after_reply": 0,
+   "units": 9179,
+   "unused_by_group": [
+    0,
+    4820,
+    387,
+    172
+   ],
+   "unused_units": 5379
+  },
+  "train seed=101 aware margin=0.10 paid_followups=never reserve=0.0": {
+   "attempts": 43407,
+   "delivered": 42267,
+   "expected_score": 537.13,
+   "followups_on_time_pct": 67.7,
+   "followups_planned": 23318,
+   "refused": 1140,
+   "refused_quota": 94,
+   "repeated_step": 0,
+   "replies": 1679,
+   "replies_by_group": [
+    1075,
+    360,
+    159,
+    85
+   ],
+   "replies_lv2_up": 604,
+   "reply_score": 554.0,
+   "sent_after_reply": 0,
+   "units": 8951,
+   "unused_by_group": [
+    0,
+    4929,
+    450,
+    288
+   ],
+   "unused_units": 5667
+  },
+  "train seed=101 blind quota_aware=False": {
+   "attempts": 44000,
+   "delivered": 34044,
+   "expected_score": 482.81,
+   "followups_on_time_pct": 65.6,
+   "followups_planned": 22630,
+   "refused": 9956,
+   "refused_quota": 9251,
+   "repeated_step": 0,
+   "replies": 1172,
+   "replies_by_group": [
+    520,
+    438,
+    139,
+    75
+   ],
+   "replies_lv2_up": 652,
+   "reply_score": 505.47,
+   "sent_after_reply": 0,
+   "units": 13468,
+   "unused_by_group": [
+    0,
+    1279,
+    0,
+    0
+   ],
+   "unused_units": 1279
+  },
+  "train seed=101 v1 -": {
+   "attempts": 44000,
+   "delivered": 34519,
+   "expected_score": 456.12,
+   "followups_on_time_pct": 59.6,
+   "followups_planned": 28508,
+   "refused": 9481,
+   "refused_quota": 7849,
+   "repeated_step": 0,
+   "replies": 1208,
+   "replies_by_group": [
+    643,
+    431,
+    97,
+    37
+   ],
+   "replies_lv2_up": 565,
+   "reply_score": 465.77,
+   "sent_after_reply": 0,
+   "units": 11494,
+   "unused_by_group": [
+    0,
+    1145,
+    1089,
+    900
+   ],
+   "unused_units": 3134
+  },
+  "train seed=102 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 43614,
+   "delivered": 42491,
+   "expected_score": 543.56,
+   "followups_on_time_pct": 56.8,
+   "followups_planned": 27507,
+   "refused": 1123,
+   "refused_quota": 307,
+   "repeated_step": 0,
+   "replies": 1484,
+   "replies_by_group": [
+    839,
+    460,
+    125,
+    60
+   ],
+   "replies_lv2_up": 645,
+   "reply_score": 541.09,
+   "sent_after_reply": 0,
+   "units": 13676,
+   "unused_by_group": [
+    0,
+    1000,
+    0,
+    0
+   ],
+   "unused_units": 1000
+  },
+  "train seed=102 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 43273,
+   "delivered": 42220,
+   "expected_score": 542.48,
+   "followups_on_time_pct": 57.6,
+   "followups_planned": 27029,
+   "refused": 1053,
+   "refused_quota": 226,
+   "repeated_step": 0,
+   "replies": 1489,
+   "replies_by_group": [
+    856,
+    454,
+    115,
+    64
+   ],
+   "replies_lv2_up": 633,
+   "reply_score": 541.21,
+   "sent_after_reply": 0,
+   "units": 13700,
+   "unused_by_group": [
+    0,
+    1032,
+    0,
+    0
+   ],
+   "unused_units": 1032
+  },
+  "train seed=102 aware margin=0.00 paid_followups=last reserve=0.0": {
+   "attempts": 43614,
+   "delivered": 42424,
+   "expected_score": 535.96,
+   "followups_on_time_pct": 63.5,
+   "followups_planned": 23440,
+   "refused": 1190,
+   "refused_quota": 180,
+   "repeated_step": 0,
+   "replies": 1614,
+   "replies_by_group": [
+    1063,
+    325,
+    140,
+    86
+   ],
+   "replies_lv2_up": 551,
+   "reply_score": 525.03,
+   "sent_after_reply": 0,
+   "units": 9077,
+   "unused_by_group": [
+    0,
+    4766,
+    557,
+    265
+   ],
+   "unused_units": 5588
+  },
+  "train seed=102 aware margin=0.00 paid_followups=last reserve=1.0": {
+   "attempts": 43492,
+   "delivered": 42345,
+   "expected_score": 531.56,
+   "followups_on_time_pct": 63.6,
+   "followups_planned": 23362,
+   "refused": 1147,
+   "refused_quota": 134,
+   "repeated_step": 0,
+   "replies": 1659,
+   "replies_by_group": [
+    1109,
+    327,
+    135,
+    88
+   ],
+   "replies_lv2_up": 550,
+   "reply_score": 529.26,
+   "sent_after_reply": 0,
+   "units": 8870,
+   "unused_by_group": [
+    0,
+    4974,
+    533,
+    314
+   ],
+   "unused_units": 5821
+  },
+  "train seed=102 aware margin=0.00 paid_followups=never reserve=0.0": {
+   "attempts": 43195,
+   "delivered": 42011,
+   "expected_score": 530.83,
+   "followups_on_time_pct": 64.5,
+   "followups_planned": 23021,
+   "refused": 1184,
+   "refused_quota": 180,
+   "repeated_step": 0,
+   "replies": 1633,
+   "replies_by_group": [
+    1097,
+    313,
+    139,
+    84
+   ],
+   "replies_lv2_up": 536,
+   "reply_score": 521.95,
+   "sent_after_reply": 0,
+   "units": 8696,
+   "unused_by_group": [
+    0,
+    5073,
+    552,
+    301
+   ],
+   "unused_units": 5926
+  },
+  "train seed=102 aware margin=0.10 paid_followups=first reserve=0.0": {
+   "attempts": 43651,
+   "delivered": 42692,
+   "expected_score": 544.29,
+   "followups_on_time_pct": 59.6,
+   "followups_planned": 27622,
+   "refused": 959,
+   "refused_quota": 140,
+   "repeated_step": 0,
+   "replies": 1475,
+   "replies_by_group": [
+    852,
+    444,
+    115,
+    64
+   ],
+   "replies_lv2_up": 623,
+   "reply_score": 540.46,
+   "sent_after_reply": 0,
+   "units": 13549,
+   "unused_by_group": [
+    0,
+    1141,
+    0,
+    0
+   ],
+   "unused_units": 1141
+  },
+  "train seed=102 aware margin=0.10 paid_followups=first reserve=1.0": {
+   "attempts": 43361,
+   "delivered": 42455,
+   "expected_score": 542.22,
+   "followups_on_time_pct": 60.2,
+   "followups_planned": 27327,
+   "refused": 906,
+   "refused_quota": 82,
+   "repeated_step": 0,
+   "replies": 1492,
+   "replies_by_group": [
+    864,
+    444,
+    123,
+    61
+   ],
+   "replies_lv2_up": 628,
+   "reply_score": 542.24,
+   "sent_after_reply": 0,
+   "units": 13520,
+   "unused_by_group": [
+    0,
+    1098,
+    6,
+    0
+   ],
+   "unused_units": 1104
+  },
+  "train seed=102 aware margin=0.10 paid_followups=last reserve=0.0": {
+   "attempts": 43861,
+   "delivered": 42756,
+   "expected_score": 536.17,
+   "followups_on_time_pct": 66.8,
+   "followups_planned": 23772,
+   "refused": 1105,
+   "refused_quota": 94,
+   "repeated_step": 0,
+   "replies": 1692,
+   "replies_by_group": [
+    1122,
+    338,
+    146,
+    86
+   ],
+   "replies_lv2_up": 570,
+   "reply_score": 544.38,
+   "sent_after_reply": 0,
+   "units": 8858,
+   "unused_by_group": [
+    0,
+    4980,
+    529,
+    286
+   ],
+   "unused_units": 5795
+  },
+  "train seed=102 aware margin=0.10 paid_followups=last reserve=1.0": {
+   "attempts": 43747,
+   "delivered": 42702,
+   "expected_score": 535.19,
+   "followups_on_time_pct": 65.0,
+   "followups_planned": 23713,
+   "refused": 1045,
+   "refused_quota": 38,
+   "repeated_step": 0,
+   "replies": 1680,
+   "replies_by_group": [
+    1110,
+    348,
+    140,
+    82
+   ],
+   "replies_lv2_up": 570,
+   "reply_score": 539.69,
+   "sent_after_reply": 0,
+   "units": 8916,
+   "unused_by_group": [
+    0,
+    4992,
+    496,
+    185
+   ],
+   "unused_units": 5673
+  },
+  "train seed=102 aware margin=0.10 paid_followups=never reserve=0.0": {
+   "attempts": 43712,
+   "delivered": 42610,
+   "expected_score": 534.21,
+   "followups_on_time_pct": 67.3,
+   "followups_planned": 23623,
+   "refused": 1102,
+   "refused_quota": 94,
+   "repeated_step": 0,
+   "replies": 1685,
+   "replies_by_group": [
+    1124,
+    332,
+    146,
+    83
+   ],
+   "replies_lv2_up": 561,
+   "reply_score": 539.89,
+   "sent_after_reply": 0,
+   "units": 8713,
+   "unused_by_group": [
+    0,
+    5104,
+    548,
+    292
+   ],
+   "unused_units": 5944
+  },
+  "train seed=102 blind quota_aware=False": {
+   "attempts": 43473,
+   "delivered": 33928,
+   "expected_score": 480.15,
+   "followups_on_time_pct": 63.1,
+   "followups_planned": 22368,
+   "refused": 9545,
+   "refused_quota": 8864,
+   "repeated_step": 0,
+   "replies": 1112,
+   "replies_by_group": [
+    482,
+    429,
+    111,
+    90
+   ],
+   "replies_lv2_up": 630,
+   "reply_score": 482.57,
+   "sent_after_reply": 0,
+   "units": 13150,
+   "unused_by_group": [
+    0,
+    1565,
+    0,
+    0
+   ],
+   "unused_units": 1565
+  },
+  "train seed=102 v1 -": {
+   "attempts": 44000,
+   "delivered": 34851,
+   "expected_score": 456.37,
+   "followups_on_time_pct": 59.8,
+   "followups_planned": 28524,
+   "refused": 9149,
+   "refused_quota": 7507,
+   "repeated_step": 0,
+   "replies": 1170,
+   "replies_by_group": [
+    614,
+    431,
+    71,
+    54
+   ],
+   "replies_lv2_up": 556,
+   "reply_score": 454.47,
+   "sent_after_reply": 0,
+   "units": 11163,
+   "unused_by_group": [
+    0,
+    1391,
+    1195,
+    914
+   ],
+   "unused_units": 3500
+  },
+  "train seed=103 aware margin=0.00 paid_followups=first reserve=0.0": {
+   "attempts": 43597,
+   "delivered": 42597,
+   "expected_score": 548.11,
+   "followups_on_time_pct": 61.0,
+   "followups_planned": 27337,
+   "refused": 1000,
+   "refused_quota": 193,
+   "repeated_step": 0,
+   "replies": 1448,
+   "replies_by_group": [
+    817,
+    463,
+    111,
+    57
+   ],
+   "replies_lv2_up": 631,
+   "reply_score": 535.18,
+   "sent_after_reply": 0,
+   "units": 14147,
+   "unused_by_group": [
+    0,
+    586,
+    0,
+    0
+   ],
+   "unused_units": 586
+  },
+  "train seed=103 aware margin=0.00 paid_followups=first reserve=1.0": {
+   "attempts": 43745,
+   "delivered": 42824,
+   "expected_score": 548.74,
+   "followups_on_time_pct": 58.2,
+   "followups_planned": 27592,
+   "refused": 921,
+   "refused_quota": 111,
+   "repeated_step": 0,
+   "replies": 1450,
+   "replies_by_group": [
+    819,
+    468,
+    109,
+    54
+   ],
+   "replies_lv2_up": 631,
+   "reply_score": 531.27,
+   "sent_after_reply": 0,
+   "units": 14176,
+   "unused_by_group": [
+    0,
+    514,
+    0,
+    0
+   ],
+   "unused_units": 514
+  },
+  "train seed=103 aware margin=0.00 paid_followups=last reserve=0.0": {
+   "attempts": 43889,
+   "delivered": 42753,
+   "expected_score": 537.27,
+   "followups_on_time_pct": 65.8,
+   "followups_planned": 23767,
+   "refused": 1136,
+   "refused_quota": 127,
+   "repeated_step": 0,
+   "replies": 1626,
+   "replies_by_group": [
+    1057,
+    367,
+    130,
+    72
+   ],
+   "replies_lv2_up": 569,
+   "reply_score": 531.25,
+   "sent_after_reply": 0,
+   "units": 9141,
+   "unused_by_group": [
+    0,
+    4780,
+    554,
+    238
+   ],
+   "unused_units": 5572
+  },
+  "train seed=103 aware margin=0.00 paid_followups=last reserve=1.0": {
+   "attempts": 43782,
+   "delivered": 42700,
+   "expected_score": 536.42,
+   "followups_on_time_pct": 64.9,
+   "followups_planned": 23718,
+   "refused": 1082,
+   "refused_quota": 69,
+   "repeated_step": 0,
+   "replies": 1638,
+   "replies_by_group": [
+    1074,
+    361,
+    138,
+    65
+   ],
+   "replies_lv2_up": 564,
+   "reply_score": 531.61,
+   "sent_after_reply": 0,
+   "units": 9201,
+   "unused_by_group": [
+    0,
+    4696,
+    525,
+    199
+   ],
+   "unused_units": 5420
+  },
+  "train seed=103 aware margin=0.00 paid_followups=never reserve=0.0": {
+   "attempts": 43609,
+   "delivered": 42473,
+   "expected_score": 533.76,
+   "followups_on_time_pct": 66.6,
+   "followups_planned": 23487,
+   "refused": 1136,
+   "refused_quota": 127,
+   "repeated_step": 0,
+   "replies": 1617,
+   "replies_by_group": [
+    1054,
+    367,
+    132,
+    64
+   ],
+   "replies_lv2_up": 563,
+   "reply_score": 524.92,
+   "sent_after_reply": 0,
+   "units": 8861,
+   "unused_by_group": [
+    0,
+    4834,
+    583,
+    442
+   ],
+   "unused_units": 5859
+  },
+  "train seed=103 aware margin=0.10 paid_followups=first reserve=0.0": {
+   "attempts": 43494,
+   "delivered": 42612,
+   "expected_score": 547.5,
+   "followups_on_time_pct": 57.4,
+   "followups_planned": 27230,
+   "refused": 882,
+   "refused_quota": 67,
+   "repeated_step": 0,
+   "replies": 1450,
+   "replies_by_group": [
+    827,
+    447,
+    120,
+    56
+   ],
+   "replies_lv2_up": 623,
+   "reply_score": 532.94,
+   "sent_after_reply": 0,
+   "units": 14217,
+   "unused_by_group": [
+    0,
+    462,
+    0,
+    0
+   ],
+   "unused_units": 462
+  },
+  "train seed=103 aware margin=0.10 paid_followups=first reserve=1.0": {
+   "attempts": 43818,
+   "delivered": 42978,
+   "expected_score": 549.18,
+   "followups_on_time_pct": 58.6,
+   "followups_planned": 27701,
+   "refused": 840,
+   "refused_quota": 27,
+   "repeated_step": 0,
+   "replies": 1478,
+   "replies_by_group": [
+    837,
+    462,
+    119,
+    60
+   ],
+   "replies_lv2_up": 641,
+   "reply_score": 540.3,
+   "sent_after_reply": 0,
+   "units": 14173,
+   "unused_by_group": [
+    0,
+    515,
+    0,
+    0
+   ],
+   "unused_units": 515
+  },
+  "train seed=103 aware margin=0.10 paid_followups=last reserve=0.0": {
+   "attempts": 43578,
+   "delivered": 42527,
+   "expected_score": 534.98,
+   "followups_on_time_pct": 64.2,
+   "followups_planned": 23540,
+   "refused": 1051,
+   "refused_quota": 43,
+   "repeated_step": 0,
+   "replies": 1614,
+   "replies_by_group": [
+    1041,
+    362,
+    137,
+    74
+   ],
+   "replies_lv2_up": 573,
+   "reply_score": 530.3,
+   "sent_after_reply": 0,
+   "units": 9283,
+   "unused_by_group": [
+    0,
+    4670,
+    517,
+    165
+   ],
+   "unused_units": 5352
+  },
+  "train seed=103 aware margin=0.10 paid_followups=last reserve=1.0": {
+   "attempts": 43818,
+   "delivered": 42787,
+   "expected_score": 536.41,
+   "followups_on_time_pct": 66.8,
+   "followups_planned": 23809,
+   "refused": 1031,
+   "refused_quota": 13,
+   "repeated_step": 0,
+   "replies": 1613,
+   "replies_by_group": [
+    1051,
+    339,
+    157,
+    66
+   ],
+   "replies_lv2_up": 562,
+   "reply_score": 528.29,
+   "sent_after_reply": 0,
+   "units": 9117,
+   "unused_by_group": [
+    0,
+    4696,
+    517,
+    251
+   ],
+   "unused_units": 5464
+  },
+  "train seed=103 aware margin=0.10 paid_followups=never reserve=0.0": {
+   "attempts": 43167,
+   "delivered": 42114,
+   "expected_score": 529.82,
+   "followups_on_time_pct": 65.4,
+   "followups_planned": 23126,
+   "refused": 1053,
+   "refused_quota": 46,
+   "repeated_step": 0,
+   "replies": 1601,
+   "replies_by_group": [
+    1043,
+    360,
+    131,
+    67
+   ],
+   "replies_lv2_up": 558,
+   "reply_score": 521.65,
+   "sent_after_reply": 0,
+   "units": 8860,
+   "unused_by_group": [
+    0,
+    4833,
+    528,
+    397
+   ],
+   "unused_units": 5758
+  },
+  "train seed=103 blind quota_aware=False": {
+   "attempts": 43487,
+   "delivered": 33999,
+   "expected_score": 483.58,
+   "followups_on_time_pct": 67.8,
+   "followups_planned": 22410,
+   "refused": 9488,
+   "refused_quota": 8846,
+   "repeated_step": 0,
+   "replies": 1149,
+   "replies_by_group": [
+    512,
+    455,
+    114,
+    68
+   ],
+   "replies_lv2_up": 637,
+   "reply_score": 490.86,
+   "sent_after_reply": 0,
+   "units": 13613,
+   "unused_by_group": [
+    0,
+    1090,
+    0,
+    0
+   ],
+   "unused_units": 1090
+  },
+  "train seed=103 v1 -": {
+   "attempts": 44000,
+   "delivered": 34900,
+   "expected_score": 458.45,
+   "followups_on_time_pct": 59.5,
+   "followups_planned": 28414,
+   "refused": 9100,
+   "refused_quota": 7539,
+   "repeated_step": 0,
+   "replies": 1196,
+   "replies_by_group": [
+    635,
+    436,
+    84,
+    41
+   ],
+   "replies_lv2_up": 561,
+   "reply_score": 459.98,
+   "sent_after_reply": 0,
+   "units": 11445,
+   "unused_by_group": [
+    0,
+    1125,
+    1182,
+    919
+   ],
+   "unused_units": 3226
+  }
+ },
+ "schedule": {
+  "Friday_maxCreators": 2000,
+  "Monday_maxCreators": 2000,
+  "Saturday_maxCreators": 500,
+  "Sunday_maxCreators": 500,
+  "Thursday_maxCreators": 2000,
+  "Tuesday_maxCreators": 2000,
+  "Wednesday_maxCreators": 2000,
+  "start_time": "20:00"
+ },
+ "train": {
+  "blind: flat cap, reads ledger": {
+   "attempts": 43653.3,
+   "delivered": 33990.3,
+   "expected_score": 482.2,
+   "expected_score_range": [
+    480.15,
+    483.58
+   ],
+   "followups_on_time_pct": 65.5,
+   "followups_planned": 22469.3,
+   "refused": 9663.0,
+   "refused_quota": 8987.0,
+   "repeated_step": 0.0,
+   "replies": 1144.3,
+   "replies_by_group": [
+    504.7,
+    440.7,
+    121.3,
+    77.7
+   ],
+   "replies_lv2_up": 639.7,
+   "reply_score": 493.0,
+   "sent_after_reply": 0.0,
+   "units": 13410.3,
+   "unused_by_group": [
+    0.0,
+    1311.3,
+    0.0,
+    0.0
+   ],
+   "unused_units": 1311.3
+  },
+  "quota-aware, default policy": {
+   "attempts": 43659.7,
+   "delivered": 42557.3,
+   "expected_score": 546.5,
+   "expected_score_range": [
+    543.56,
+    548.11
+   ],
+   "followups_on_time_pct": 59.9,
+   "followups_planned": 27419.7,
+   "refused": 1102.3,
+   "refused_quota": 279.0,
+   "repeated_step": 0.0,
+   "replies": 1485.7,
+   "replies_by_group": [
+    835.0,
+    470.0,
+    121.0,
+    59.7
+   ],
+   "replies_lv2_up": 650.7,
+   "reply_score": 545.1,
+   "sent_after_reply": 0.0,
+   "units": 13909.3,
+   "unused_by_group": [
+    0.0,
+    802.7,
+    0.0,
+    0.0
+   ],
+   "unused_units": 802.7
+  },
+  "quota-aware, tuned on TRAIN": {
+   "attempts": 43672.7,
+   "delivered": 42649.0,
+   "expected_score": 546.8,
+   "expected_score_range": [
+    542.48,
+    549.19
+   ],
+   "followups_on_time_pct": 58.6,
+   "followups_planned": 27486.3,
+   "refused": 1023.7,
+   "refused_quota": 194.7,
+   "repeated_step": 0.0,
+   "replies": 1486.3,
+   "replies_by_group": [
+    847.0,
+    461.3,
+    119.3,
+    58.7
+   ],
+   "replies_lv2_up": 639.3,
+   "reply_score": 543.5,
+   "sent_after_reply": 0.0,
+   "units": 13941.0,
+   "unused_by_group": [
+    0.0,
+    770.7,
+    0.0,
+    0.0
+   ],
+   "unused_units": 770.7
+  },
+  "v1: flat cap, assumes delivered": {
+   "attempts": 44000.0,
+   "delivered": 34756.7,
+   "expected_score": 457.0,
+   "expected_score_range": [
+    456.12,
+    458.45
+   ],
+   "followups_on_time_pct": 59.6,
+   "followups_planned": 28482.0,
+   "refused": 9243.3,
+   "refused_quota": 7631.7,
+   "repeated_step": 0.0,
+   "replies": 1191.3,
+   "replies_by_group": [
+    630.7,
+    432.7,
+    84.0,
+    44.0
+   ],
+   "replies_lv2_up": 560.7,
+   "reply_score": 460.1,
+   "sent_after_reply": 0.0,
+   "units": 11367.3,
+   "unused_by_group": [
+    0.0,
+    1220.3,
+    1155.3,
+    911.0
+   ],
+   "unused_units": 3286.7
+  }
+ },
+ "train_seeds": [
+  101,
+  102,
+  103
+ ],
+ "tuned_policy": "margin=0.00 paid_followups=first reserve=1.0"
+}

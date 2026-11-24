@@ -1,0 +1,27 @@
+{
+ "_note": "SYNTHETIC example. Field names follow OutreachCapacityResponse in Reacher's public OpenAPI document. The numbers are made up and describe no real shop.",
+ "shop_id": 101,
+ "daily_creators_used": 400,
+ "daily_window_resets_at": "2026-11-03T00:00:00Z",
+ "concurrent_automations_running": 2,
+ "max_concurrent_automations": 5,
+ "daily_limit_throttled": false,
+ "weekly_limit_throttled": false,
+ "outreach_quota": {
+  "quota_type": "PERIOD",
+  "used": 1730,
+  "limit": null,
+  "remaining": null,
+  "unlimited": true,
+  "resets_at": "2026-11-08T19:00:00Z",
+  "gmv_tier": "synthetic",
+  "gmv_level_rule": null,
+  "tiered": true,
+  "tiers": [
+   {"creator_levels": [0, 1], "unlimited": true, "standard_limit": null, "standard_used": null, "bonus_limit": null, "bonus_used": null, "remaining": null},
+   {"creator_levels": [2], "unlimited": false, "standard_limit": 2500, "standard_used": 1100, "bonus_limit": 0, "bonus_used": 0, "remaining": 1400},
+   {"creator_levels": [3], "unlimited": false, "standard_limit": 750, "standard_used": 420, "bonus_limit": 150, "bonus_used": 0, "remaining": 480},
+   {"creator_levels": [4, 5, 6, 7], "unlimited": false, "standard_limit": 500, "standard_used": 210, "bonus_limit": 0, "bonus_used": 0, "remaining": 290}
+  ]
+ }
+}
